@@ -30,3 +30,6 @@ show-show-apps-button=false
 show-trash=true
 show-windows-preview=false
 transparency-mode='FIXED'
+
+[org/gnome/shell/extensions/dash-to-panel]
+stockgs-keep-top-panel=true
