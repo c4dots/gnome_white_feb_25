@@ -1,0 +1,21 @@
+[org/gnome/shell/extensions/search-light]
+animation-speed=100.0
+background-color=(1.0, 1.0, 1.0, 1.0)
+blur-background=false
+blur-brightness=0.59999999999999998
+blur-sigma=30.0
+border-color=(0.64535558223724365, 0.75333333015441895, 0.74037599563598633, 0.0)
+border-radius=3.2991803278688527
+border-thickness=0
+entry-font-size=0
+font-size=0
+monitor-count=3
+preferred-monitor=0
+scale-height=0.17000000000000001
+scale-width=0.12
+secondary-shortcut-search=['<Control><Alt>space']
+shortcut-search=['<Shift><Control>a']
+show-panel-icon=false
+text-color=(0.0, 0.0, 0.0, 1.0)
+window-effect=0
+window-effect-color=(1.0, 1.0, 1.0, 0.8033333420753479)
