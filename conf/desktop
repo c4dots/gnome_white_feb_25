@@ -1,5 +1,5 @@
 [org/gnome/desktop/interface]
-color-scheme='prefer-light'
+color-scheme='default'
 document-font-name='Sans 11'
 font-antialiasing='rgba'
 font-hinting='slight'
