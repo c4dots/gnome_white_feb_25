@@ -136,6 +136,7 @@ gnome-extensions enable dash-to-dock@micxgx.gmail.com
 gnome-extensions enable top-bar-organizer@julian.gse.jsts.xyz
 gnome-extensions enable openbar@neuromorph
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+gnome-extensions disable dash-to-panel@jderose9.github.com
 
 echo ">> Loading configs..."
 dconf load / < ./conf/apps/gedit
