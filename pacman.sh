@@ -116,12 +116,13 @@ if [ -d "$HOME/.oh-my-zsh" ]; then
 else
     echo ">> Installing Oh my ZShell..."
     yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-    sed -i 's/ZSH_THEME=".*"/ZSH_THEME="jonathan"/' ~/.zshrc
-    source ~/.zshrc
     dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding "'<Super>t'"
     dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/command "'gnome-terminal -- zsh'"
     dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/name "'terminal'"
 fi
+echo ">> Changing ZSH Theme!"
+sed -i 's/ZSH_THEME=".*"/ZSH_THEME="jonathan"/' ~/.zshrc
+source ~/.zshrc
 #################### PACKAGES ####################
 
 
@@ -131,11 +132,11 @@ echo ">> Enabling extensions..."
 gnome-extensions enable search-light@icedman.github.com
 gnome-extensions enable ding@rastersoft.com
 gnome-extensions enable arcmenu@arcmenu.com
-gnome-extensions enable dash-to-dock@micxgx.gmail.com
-gnome-extensions enable top-bar-organizer@julian.gse.jsts.xyz
 gnome-extensions enable openbar@neuromorph
+gnome-extensions enable top-bar-organizer@julian.gse.jsts.xyz
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
 gnome-extensions disable dash-to-panel@jderose9.github.com
+gnome-extensions enable dash-to-dock@micxgx.gmail.com
 
 echo ">> Loading configs..."
 dconf load / < ./conf/apps/gedit
