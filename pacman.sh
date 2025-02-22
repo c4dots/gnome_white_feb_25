@@ -91,8 +91,7 @@ fi
 
 if ! gnome-extensions list | grep -q "dash-to-dock"; then
     echo ">> Installing Dash to dock extension..."
-    git clone https://github.com/micheleg/dash-to-dock.git
-    make -C dash-to-dock install
+    yay -S gnome-shell-extension-dash-to-dock --noconfirm
 else
     echo ">> Dash to dock extension is already installed. Skipping installation."
 fi
