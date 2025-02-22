@@ -287,5 +287,5 @@ wmaxbar=true
 
 [org/gnome/shell/extensions/top-bar-organizer]
 center-box-order=['dwellClick', 'dateMenu']
-left-box-order=['ArcMenu', 'quickSettings']
-right-box-order=['screenRecording', 'activities', 'a11y', 'keyboard', 'screenSharing']
+left-box-order=['ArcMenu']
+right-box-order=['screenRecording', 'quickSettings', 'activities', 'a11y', 'keyboard', 'screenSharing']
