@@ -36,7 +36,6 @@ if [ ! -d "$HOME/.themes/Colloid-Light-Nord" ]; then
     git clone https://github.com/vinceliuice/Colloid-gtk-theme
     cd Graphite-gtk-theme
     sh install.sh --tweaks rimless normal -n Colloid-Light-Nord
-    cd ..
 else
     echo ">> Theme already installed, skipping."
 fi
@@ -114,9 +113,9 @@ else
 fi
 
 if [ -d "$HOME/.oh-my-zsh" ]; then
-    echo ">> ZShell is already installed. Skipping installation."
+    echo ">> Oh my ZShell is already installed. Skipping installation."
 else
-    echo ">> Installing ZShell..."
+    echo ">> Installing Oh my ZShell..."
     yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     sed -i 's/ZSH_THEME=".*"/ZSH_THEME="jonathan"/' ~/.zshrc
     source ~/.zshrc
