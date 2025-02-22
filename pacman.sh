@@ -100,7 +100,8 @@ fi
 
 if ! gnome-extensions list | grep -q "openbar"; then
     echo ">> Installing OpenBar extension..."
-    git clone https://github.com/neuromorph/openbar.git ~/.local/share/gnome-shell/extensions/openbar@neuromorph
+    git clone https://github.com/neuromorph/openbar.git
+    cp -R openbar/openbar@neuromorph/ ~/.local/share/gnome-shell/extensions/
 else
     echo ">> OpenBar extension is already installed. Skipping installation."
 fi
@@ -114,7 +115,7 @@ fi
 
 if [ -d "$HOME/.oh-my-zsh" ]; then
     echo ">> Installing ZShell..."
-    y | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    yes | sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
     sed -i 's/ZSH_THEME=".*"/ZSH_THEME="jonathan"/' ~/.zshrc
     source ~/.zshrc
     dconf write /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/binding "'<Super>t'"
