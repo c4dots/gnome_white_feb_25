@@ -1,4 +1,4 @@
-[org/gnome/shell/extensions/arcmenu]
+[/org/gnome/shell/extensions/arcmenu]
 arc-menu-icon=15
 button-padding=25
 custom-menu-button-icon-size=14.0
